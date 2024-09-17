@@ -14,7 +14,7 @@ function SiteNav() {
     <>
       <header className="sticky top-0 z-40 w-full border-b border-transparent bg-white/10 backdrop-blur-lg shadow-sm">
         <div className="container flex h-16 items-center justify-between px-4 md:px-6">
-          <Link href="#" className="flex items-center gap-2" prefetch={false}>
+          <Link href="/" className="flex items-center gap-2" prefetch={false}>
             <motion.div
               whileHover={{ rotate: 360 }}
               transition={{ duration: 0.5 }}
@@ -28,7 +28,7 @@ function SiteNav() {
           </nav>
           <div className="flex items-center gap-2">
             <div className="hidden md:flex">
-              <Link href="/animation">
+              <Link href="/createlogo">
                 <Button className="bg-purple-600 text-white hover:bg-purple-700 ml-2">
                   Get Started
                 </Button>
@@ -50,12 +50,16 @@ function SiteNav() {
           >
             <div className="flex flex-col items-center justify-center h-full">
               <NavLinks />
-              <Link href="/animation">
+              <Link href="/createlogo">
                 <Button className="bg-purple-600 text-white hover:bg-purple-700 mt-2">
                   Get Started
                 </Button>
               </Link>
-              <Button variant="ghost" className="mt-4 bg-red-500 text-white" onClick={toggleMenu}>
+              <Button
+                variant="ghost"
+                className="mt-4 bg-red-500 text-white"
+                onClick={toggleMenu}
+              >
                 Close
               </Button>
             </div>
