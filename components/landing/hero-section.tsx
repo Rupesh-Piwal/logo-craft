@@ -44,19 +44,21 @@ function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            <button
-              className="bg-purple-600 text-white text-lg px-8 py-4 rounded-full hover:bg-purple-700 transition-colors flex items-center space-x-2"
-              onMouseEnter={() => setIsHovered(true)}
-              onMouseLeave={() => setIsHovered(false)}
-            >
-              <span>Start Designing</span>
-              <motion.div
-                animate={{ x: isHovered ? 5 : 0 }}
-                transition={{ duration: 0.2 }}
+            <Link href="/createlogo">
+              <button
+                className="bg-purple-600 text-white text-lg px-8 py-4 rounded-full hover:bg-purple-700 transition-colors flex items-center space-x-2"
+                onMouseEnter={() => setIsHovered(true)}
+                onMouseLeave={() => setIsHovered(false)}
               >
-                <ArrowRight className="h-6 w-6" />
-              </motion.div>
-            </button>
+                <span>Start Designing</span>
+                <motion.div
+                  animate={{ x: isHovered ? 5 : 0 }}
+                  transition={{ duration: 0.2 }}
+                >
+                  <ArrowRight className="h-6 w-6" />
+                </motion.div>
+              </button>
+            </Link>
           </motion.div>
         </div>
       </section>
